@@ -1,5 +1,9 @@
 import com.example.pertemuan12.model.Mahasiswa
 
+data class InsertUiState(
+    val insertUiEvent: InsertUiEvent = InsertUiEvent()
+)
+
 data class InsertUiEvent(
     val nim: String = "",
     val nama: String = "",
