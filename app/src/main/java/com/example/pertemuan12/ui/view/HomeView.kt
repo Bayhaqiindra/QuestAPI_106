@@ -36,6 +36,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.pertemuan12.PenyediaViewModel
 import com.example.pertemuan12.R
 import com.example.pertemuan12.model.Mahasiswa
 import com.example.pertemuan12.navigation.DestinasiNavigasi
