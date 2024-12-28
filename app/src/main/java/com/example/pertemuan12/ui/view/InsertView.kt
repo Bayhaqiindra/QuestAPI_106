@@ -92,3 +92,14 @@ fun EntryBody(
         }
     }
 }
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun FormInput(
+    insertUiEvent: InsertUiEvent,
+    modifier: Modifier = Modifier,
+    onValueChange: (InsertUiEvent) -> Unit = {},
+    enabled: Boolean = true
+){
+
+}
