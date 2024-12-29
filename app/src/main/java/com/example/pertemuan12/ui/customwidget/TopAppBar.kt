@@ -1,6 +1,7 @@
 package com.example.pertemuan12.ui.customwidget
 
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Refresh
@@ -26,47 +27,26 @@ fun CostumeTopAppBar(
     scrollBehavior: TopAppBarScrollBehavior? = null,
     navigateUp: () -> Unit = {},
     onRefresh: () -> Unit = {},
-) {
+){
     CenterAlignedTopAppBar(
-        title = {
-            Text(
-                text = title,
-                color = Color.Black,
-                fontSize = 22.sp,
-                fontWeight = FontWeight.Bold
-            )
-        },
+        title = { Text(title) },
         actions = {
-            IconButton(
-                onClick = onRefresh,
-                modifier = Modifier
-                    .clickable { onRefresh() }
-            ) {
-                Icon(
-                    imageVector = Icons.Default.Refresh,
-                    contentDescription = "Refresh",
-                    tint = Color.Black
-                )
-            }
+            Icon(imageVector = Icons.Default.Refresh,
+                contentDescription = "",
+                modifier = Modifier.clickable {
+                    onRefresh()
+                })
         },
-        modifier = modifier,
         scrollBehavior = scrollBehavior,
+        modifier = Modifier.statusBarsPadding(),
         navigationIcon = {
             if (canNavigateBack) {
                 IconButton(onClick = navigateUp) {
                     Icon(
                         imageVector = Icons.Filled.ArrowBack,
-                        contentDescription = "Back",
-                        tint = Color.Black
-                    )
+                        contentDescription = null)
                 }
             }
-        },
-        colors = topAppBarColors(
-            containerColor = Color.White,
-            titleContentColor = Color.Black,
-            actionIconContentColor = Color.Black
-        )
+        }
     )
 }
-
