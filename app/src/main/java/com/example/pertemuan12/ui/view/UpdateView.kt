@@ -15,6 +15,8 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import com.example.pertemuan12.navigation.DestinasiNavigasi
 import com.example.pertemuan12.ui.customwidget.CostumeTopAppBar
 import com.example.pertemuan12.ui.viewmodel.PenyediaViewModel
+import com.example.pertemuan12.ui.viewmodel.UpdateUiEvent
+import com.example.pertemuan12.ui.viewmodel.UpdateUiState
 import com.example.pertemuan12.ui.viewmodel.UpdateViewModel
 import kotlinx.coroutines.launch
 
@@ -64,5 +66,15 @@ fun UpdateView(
                 .fillMaxWidth()
         )
     }
+}
+
+@Composable
+fun UpdateBody(
+    updateUiState: UpdateUiState,
+    onSiswaValueChange: (UpdateUiEvent) -> Unit,
+    onSaveClick: () -> Unit,
+    modifier: Modifier = Modifier
+){
+
 }
 
