@@ -39,7 +39,11 @@ class NetworkMahasiswaRepository(
 
     override suspend fun getMahasiswa(): List<Mahasiswa> = mahasiswaApiService.getMahasiswa()
     override suspend fun getMahasiswaById(nim: String): Mahasiswa {
-        return mahasiswaApiService.getMahasiswaBynim("nim")
+        try {
+            return mahasiswaApiService.getMahasiswaBynim(nim)
+        } catch (e: IOException) {
+            throw IOException("Failed to fetch mahasiswa with NIM: $nim. Network error occurred.", e)
+        }
     }
 
 }
