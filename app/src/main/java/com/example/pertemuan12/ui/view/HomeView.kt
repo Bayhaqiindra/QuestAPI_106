@@ -36,7 +36,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.pertemuan12.PenyediaViewModel
+import com.example.pertemuan12.ui.viewmodel.PenyediaViewModel
 import com.example.pertemuan12.R
 import com.example.pertemuan12.model.Mahasiswa
 import com.example.pertemuan12.navigation.DestinasiNavigasi
@@ -60,12 +60,14 @@ fun HomeScreen(
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
 
     Scaffold(
-        modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
+        modifier = modifier
+            .nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
             CostumeTopAppBar(
                 title = DestinasiHome.titleRes,
                 canNavigateBack = false,
                 scrollBehavior = scrollBehavior,
+
                 onRefresh = { viewModel.getMhs() }
             )
         },
