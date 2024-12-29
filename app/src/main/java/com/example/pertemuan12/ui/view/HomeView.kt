@@ -77,7 +77,7 @@ fun HomeScreen(
                 shape = MaterialTheme.shapes.medium,
                 modifier = Modifier.padding(18.dp)
             ) {
-                Icon(imageVector = Icons.Default.Add, contentDescription = "Add Kontak")
+                Icon(imageVector = Icons.Default.Add, contentDescription = "Tambah Kontak")
             }
         }
     ) { innerPadding ->
@@ -109,7 +109,7 @@ fun HomeStatus(
         is HomeUiState.Success -> {
             if (homeUiState.mahasiswa.isEmpty()) {
                 Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text(text = "Tidak ada data Mahasiswa")
+                    Text(text = "Tidak ada data")
                 }
             } else {
                 MhsLayout(
