@@ -63,11 +63,13 @@ fun PengelolaHalaman(navController: NavHostController = rememberNavController())
                     }
                 },
                 onClick = {
+                    // Navigate to the update screen when FAB is clicked
                     navController.navigate("${DestinasiUpdate.route}/$nim")
                 }
             )
         }
 
+        // Update Screen
         composable(
             route = "${DestinasiUpdate.route}/{nim}",
             arguments = listOf(navArgument("nim") { type = NavType.StringType })
