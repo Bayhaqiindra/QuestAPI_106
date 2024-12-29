@@ -164,7 +164,7 @@ fun FormInput(
         )
         if (enabled) {
             Text(
-                text = "Isi Semua Data",
+                text = "Isi Semua Data!",
                 modifier = Modifier.padding(12.dp)
             )
         }
