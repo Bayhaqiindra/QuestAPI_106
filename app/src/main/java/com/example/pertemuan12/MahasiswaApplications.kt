@@ -1,8 +1,8 @@
 package com.example.pertemuan12
 
 import android.app.Application
-import com.example.pertemuan12.repository.AppContainer
-import com.example.pertemuan12.repository.MahasiswaContainer
+import com.example.pertemuan12.dependeciesinjection.AppContainer
+import com.example.pertemuan12.dependeciesinjection.MahasiswaContainer
 
 class MahasiswaApplications: Application() {
     lateinit var container: AppContainer
