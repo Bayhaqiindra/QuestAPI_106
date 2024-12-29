@@ -25,7 +25,7 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.pertemuan12.PenyediaViewModel
+import com.example.pertemuan12.ui.viewmodel.PenyediaViewModel
 import com.example.pertemuan12.navigation.DestinasiNavigasi
 import com.example.pertemuan12.ui.customwidget.CostumeTopAppBar
 import kotlinx.coroutines.launch

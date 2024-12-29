@@ -1,4 +1,4 @@
-package com.example.pertemuan12
+package com.example.pertemuan12.ui.viewmodel
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
