@@ -4,7 +4,7 @@ Home
 ![Screenshot_20241230_040356](https://github.com/user-attachments/assets/181c8032-b2ff-4661-9d43-2b72df4ffd2f)
 
 Detail
-![Screenshot_20241230_040356](https://github.com/user-attachments/assets/03f8adc8-d407-4ac4-b3fb-c7f996b1f146)
+![Screenshot_20241230_140717](https://github.com/user-attachments/assets/0e9f7ce8-a2bf-4cc2-afff-18889a0b0045)
 
 Update
 ![Screenshot_20241230_040714](https://github.com/user-attachments/assets/652196de-c008-4097-9aa3-5df64270107a)
